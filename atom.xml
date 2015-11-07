@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2015-10-17T07:35:17.244Z</updated>
+  <updated>2015-11-07T03:06:50.401Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -13,6 +13,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ node Log神器chalk]]></title>
+    <link href="http://www.soledad.com.cn/2015/11/07/node-Log%E7%A5%9E%E5%99%A8chalk/"/>
+    <id>http://www.soledad.com.cn/2015/11/07/node-Log神器chalk/</id>
+    <published>2015-11-07T03:06:50.000Z</published>
+    <updated>2015-11-07T03:06:50.401Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>好久都没有写blog了,最近近了新单位，发现记录是在是非常重要都事情。<br>不但日报周报需要认真对待，对待技术更要以耐心积跬步都心理来进行。方得始终。</p>
+</blockquote>
+<p>为了更好都书写blog所以对blog不断的迭代和改进是少不了的,研究开始，发现输出的时候用到了chalk.js这个在之前其他很多项目中也看到过，但是一直没用过.</p>
+<h2 id="Chalk-js">Chalk.js</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm i hexo-cli --save</span><br></pre></td></tr></table></figure>
+<p>发现目录中有个logger.js</p>
+<p>用到了chalk<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> chalk = <span class="built_in">require</span>(<span class="string">'chalk'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>看上去用起来非常方便</p>
+<p>文章在此<br><a href="https://github.com/chalk/chalk" target="_blank" rel="external">“chalk”</a></p>
+<p>支持红绿蓝(三原色)黄品青（三间色）及黑白灰<br><img src="http://ww1.sinaimg.cn/large/59e77323gw1exs7v56t2ej214406440a.jpg" alt=""></p>
+<hr>
+<p>不仅可以多个api同时使用也可以内嵌使用，像这样<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const chalk = require(&#39;chalk&#39;);&#10;console.log(chalk.red(&#39;Hello&#39;, chalk.green.bgBlue(&#39;world&#39;)))</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>同时也可以支持控制台全局调试</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --global chalk-cli</span><br></pre></td></tr></table></figure>
+<p>在terminal里面执行<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;chalk bold cyan <span class="string">"hello world"</span>;</span><br></pre></td></tr></table></figure></p>
+<p>即可</p>
+<h2 id="项目中使用">项目中使用</h2><p>在项目中使用也是非常方便的，可以将其再封装一次。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ctx = <span class="keyword">new</span> chalk.constructor(&#123;enabled: <span class="literal">false</span>&#125;);</span><br><span class="line"><span class="keyword">var</span> error = ctx.red;</span><br></pre></td></tr></table></figure></p>
+<h2 id="总结">总结</h2><p>说白了还是希望好调试一下罢了。</p>
+<h2 id="Related">Related</h2><p><a href="https://github.com/chalk/chalk" target="_blank" rel="external">“chalk”</a><br><a href="https://github.com/chalk/chalk-cli" target="_blank" rel="external">“chalk-cli”</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>好久都没有写blog了,最近近了新单位，发现记录是在是非常重要都事情。<br>不但日报周报需要认真对待，对待技术更要以耐心积跬步都心理来进行。方得始终。</p>
+</blockquote>
+<p>为了更好都书写blog所以对blog不断的迭代和改进]]>
+    </summary>
+    
+      <category term="module" scheme="http://www.soledad.com.cn/tags/module/"/>
+    
+      <category term="node" scheme="http://www.soledad.com.cn/tags/node/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[去宁波旅行]]></title>
@@ -1504,67 +1544,6 @@ null Array（比较常见，可由.construct进行判定） Math RegExp <span cl
     </summary>
     
       <category term="未分类" scheme="http://www.soledad.com.cn/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[事件的绑定与冒泡]]></title>
-    <link href="http://www.soledad.com.cn/2014/04/17/e4-ba-8b-e4-bb-b6-e7-9a-84-e7-bb-91-e5-ae-9a-e4-b8-8e-e5-86-92-e6-b3-a1/"/>
-    <id>http://www.soledad.com.cn/2014/04/17/e4-ba-8b-e4-bb-b6-e7-9a-84-e7-bb-91-e5-ae-9a-e4-b8-8e-e5-86-92-e6-b3-a1/</id>
-    <published>2014-04-17T03:08:41.000Z</published>
-    <updated>2015-10-17T04:04:42.176Z</updated>
-    <content type="html"><![CDATA[<p>一般浏览器都进行的是冒牌的程序</p>
-<pre><code>当几个元素在不同的父子级夹杂的时候需要添加<span class="keyword">return</span> <span class="keyword">false</span>来解除冒牌
-
-如果是正常绑定子父级关系的话完全没有问题
-
-但是如果是需要动态加载的话（貌似jquery的live已不能用）
-
-现在比较喜欢用jquery的<span class="keyword">delegate</span>来绑定子父级的事件
-
-这样如果在父级绑定一个事件
-
-再用动态的模式在子级绑定一个事件，可能子集用来动态挂靠的父级拥有比之前父级更高的优先级
-
-比如
-</code></pre><pre>
-&lt;div class=&quot;parent_top&quot;&gt;
-&nbsp;&nbsp; &nbsp;&lt;div class=&quot;parent&quot;&gt;
-&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;child&quot;&gt;
-&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;heihei
-&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;
-&nbsp;&nbsp; &nbsp;&lt;/div&gt;
-&lt;/div&gt;
-</pre>
-
-<pre><code>如果我在<span class="keyword">parent</span>绑定一下
-</code></pre><pre>
-$(&#39;.parent&#39;).click(function(){alert(&#39;I&#39;m a parent&#39;)});
-</pre>
-
-<pre><code>再在child上动态绑定一下
-</code></pre><pre>
-$(&#39;.parent_top&#39;).delegate(&#39;.child&#39;,&#39;click&#39;function(){alert(&#39;I&#39;m a child&#39;)});</pre>
-
-<pre><code>这种情况的话其实相当于捕获的过程,如果希望子集的事件不被父级影响这时候用<span class="keyword">return</span> <span class="literal">false</span>;就没什么效果了。
-
-那么我们就用捕获的方式截获一下
-</code></pre><pre>
-$(&#39;.parent&#39;).click(function(e){if($(e.target).hasClass(&#39;child&#39;)){return false;}alert(&#39;I&#39;m a parent&#39;)});
-</pre>
-
-<pre><code>这样便可以了，很神奇，<span class="keyword">return</span> fasle阻止了父级事件的冒牌。却使挂靠在父级的动态子集正常触发事件。
-
-当时误打误撞用了正确的方式（难道是天赋和感觉）。今天用断点调试了一下才发现了正确的规律。还好
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p>一般浏览器都进行的是冒牌的程序</p>
-<pre><code>当几个元素在不同的父子级夹杂的时候需要添加<span class="keyword">return</span> <span class="keyword">false</span>来解除冒牌
-
-如果是正常绑定子]]>
-    </summary>
-    
-      <category term="js" scheme="http://www.soledad.com.cn/categories/js/"/>
     
   </entry>
   
