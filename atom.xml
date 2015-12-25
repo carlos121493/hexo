@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2015-11-22T05:40:37.644Z</updated>
+  <updated>2015-12-25T06:17:05.611Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -13,6 +13,138 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[D2大会收获]]></title>
+    <link href="http://www.soledad.com.cn/2015/12/25/D2%E5%A4%A7%E4%BC%9A%E6%94%B6%E8%8E%B7/"/>
+    <id>http://www.soledad.com.cn/2015/12/25/D2大会收获/</id>
+    <published>2015-12-25T06:16:35.000Z</published>
+    <updated>2015-12-25T06:17:05.611Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbvgyujiyj20ft083mzb.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/large/59e77323jw1ezbsalh64rj20ga099dgq.jpg" alt=""></p>
+<blockquote>
+<p>12月19日 阿里西溪园区 融合</p>
+</blockquote>
+<hr>
+<p>hybrird 移动端部分</p>
+<hr>
+<h3 id="1-从Web页面到Native_UI">1.从Web页面到Native UI</h3><p><img src="http://ww4.sinaimg.cn/large/59e77323jw1ezbqnx9h1hj20gs0gq77l.jpg" alt="blend"></p>
+<p><a href="http://clouda.baidu.com/blend/introduction/introduction" target="_blank" rel="external">!blend解决方案</a></p>
+<p><a href="http://clouda.baidu.com/blend2" target="_blank" rel="external">!blendUI</a></p>
+<p><a href="http://clouda.baidu.com/blend2/docs/" target="_blank" rel="external">!blendUI文档</a></p>
+<p>提供</p>
+<ul>
+<li><p>页面框架</p>
+</li>
+<li><p>页面组件</p>
+</li>
+<li><p>api后端服务</p>
+</li>
+<li><p>打包集成 <a href="http://developer.baidu.com/" target="_blank" rel="external">百度云开发者平台</a></p>
+</li>
+</ul>
+<p>主要用于 <a href="http://ww4.sinaimg.cn/large/59e77323jw1ezbqwqczvwj206f0bfq3e.jpg" target="_blank" rel="external">百度浏览器集成</a></p>
+<blockquote>
+<p>意义在于开发百度的云组件还是比较方便的，侧滑等ui动画比较流畅</p>
+</blockquote>
+<p>app总体感觉不可控，限制于api提供的接口，</p>
+<p>bridge并不特别通用</p>
+<p><a href="http://clouda.baidu.com/sample" target="_blank" rel="external">sample</a></p>
+<ul>
+<li>github 地址</li>
+</ul>
+<p><a href="https://github.com/Clouda-team" target="_blank" rel="external">blend</a></p>
+<p>另外推荐两款类似</p>
+<ul>
+<li>Hbuilder 提供比较强大的bridge.js 提供页面组件，同时可以扩展nativeapi ，提供ide，云打包 </li>
+</ul>
+<p>不提供后端api</p>
+<p><a href="http://www.dcloud.io/" target="_blank" rel="external">dcloud</a> 简单易学，很多公司组织在用</p>
+<ul>
+<li>提供页面组件 后端api native</li>
+</ul>
+<p>apicloud 提供比较强大的组件，接口，提供ide，比较大厚重</p>
+<p><a href="http://www.apicloud.com/" target="_blank" rel="external">apicloud</a></p>
+<hr>
+<h3 id="2-_samurai-native">2. samurai-native</h3><p>通过改变native webkit的方式将 native ui组件直接嵌入native中</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="title">UICollectionViewCell</span> <span class="attribute">is-static</span> <span class="attribute">is-row</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"profile-wrapper"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"profile-attribution"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"profile-segment no-wrap"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"segment-wrapper"</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"segment-count"</span>&gt;</span>10,875<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"segment-suffix"</span>&gt;</span>Followers<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"profile-segment no-wrap"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"segment-wrapper"</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"segment-count"</span>&gt;</span>199<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"segment-suffix"</span>&gt;</span>Followers<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">UICollectionViewCell</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>属于geek玩的感觉，个人开发，觉得也花了不少心血</p>
+<p>但是</p>
+<p>1.不支持android</p>
+<p>2.js支持有限</p>
+<p>3.需要根据技术不断的更新更新自己的组件。</p>
+<p><a href="http://hackers-painters.github.io/samurai-native/" target="_blank" rel="external">offical官网</a></p>
+<p><a href="https://github.com/hackers-painters/samurai-native" target="_blank" rel="external">github地址</a></p>
+<hr>
+<p>web 组件 服务化</p>
+<hr>
+<p>1.ques q.js</p>
+<p><img src="http://ww3.sinaimg.cn/large/59e77323jw1ezbrlmozcsj208o08e0tn.jpg" alt=""></p>
+<p>属于借鉴了google流行框架polymer，和非主流框架vue.js</p>
+<p>q.js号称兼容到ie6，然而vue.js只支持到ie9</p>
+<p><a href="http://cn.vuejs.org/" target="_blank" rel="external">vue</a></p>
+<p>通过将数据和组件绑定到方式进行，既可以双向绑定也可以单向绑定</p>
+<p><a href="http://imweb.github.io/Q.js/" target="_blank" rel="external">q.js</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;var vm = new Q(&#123;&#10;    el: &#39;#demo&#39;,&#10;    data: &#123;&#10;        msg: &#39;hello&#39;&#10;    &#125;&#10;&#125;);&#10;vm.$set(&#39;msg&#39;, obj.msg);</span><br></pre></td></tr></table></figure>
+<p>值得借鉴的地方</p>
+<p>有组件基础的统一方式，对于底层开发同学来说，调用比较规范</p>
+<p>比如像hermes里面同样内容的参数有的是el，有的叫trigger，有的叫target。</p>
+<p>有些外漏的方式利于调用同事学习</p>
+<p>不可取的地方</p>
+<p>用了很大的两个库 underscore jquery集成到框架中。作为组件有点庞大。</p>
+<p>有zepto jquery native三个版本，基本上是组装了一遍。</p>
+<p>2.ques</p>
+<p><a href="http://miniflycn.github.io/Ques/" target="_blank" rel="external">ques</a></p>
+<p><a href="https://github.com/miniflycn/Ques" target="_blank" rel="external">github</a> </p>
+<p><a href="https://github.com/miniflycn/Ques/blob/master/src/components.html" target="_blank" rel="external">demo</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">ui-header</span>&gt;</span>	</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Ques<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">p</span>&gt;</span>Road to the future.<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">ui-header</span>&gt;</span></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">自定义标签到方式，将css和html融为一体，主要用于qq的部分产品</span><br><span class="line"></span><br><span class="line">看上去代码非常多和杂乱，个人开发工作量看上去不小</span><br><span class="line"></span><br><span class="line">[polymer](http://docs.polymerchina.org/1.0/)</span><br><span class="line"></span><br><span class="line">```html</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">dom-module</span> <span class="attribute">id</span>=<span class="value">"contact-card"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"import"</span> <span class="attribute">type</span>=<span class="value">"css"</span> <span class="attribute">href</span>=<span class="value">"contact-card.css"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">content</span>&gt;</span><span class="tag">&lt;/<span class="title">content</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">iron-icon</span> <span class="attribute">icon</span>=<span class="value">"star"</span> <span class="attribute">hidden</span>$=<span class="value">"&#123;&#123;!starred&#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="title">iron-icon</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">dom-module</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="actionscript"></span><br><span class="line">  Polymer(&#123;</span><br><span class="line">    <span class="keyword">is</span>: <span class="string">'contact-card'</span>,</span><br><span class="line">    properties: &#123;</span><br><span class="line">      starred: Boolean</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p>2.RAP 接口工具 *</p>
+<p><img src="http://ww1.sinaimg.cn/large/59e77323jw1ezbrvdtqrtj208l07wdgt.jpg" alt="RAP"></p>
+<p><a href="http://rapapi.net/" target="_blank" rel="external"></a></p>
+<p><a href="https://github.com/thx/RAP" target="_blank" rel="external"></a></p>
+<p>解决问题</p>
+<p>1.接口文档的整理和定义</p>
+<p>2.接口的异步调用，方便的在开发环境中生成数据</p>
+<p>3.mock数据</p>
+<p>4.测试数据</p>
+<blockquote>
+<p>前端开发的福音</p>
+</blockquote>
+<p>开发现状</p>
+<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv12vdo2j20jc0inq6a.jpg" alt=""></p>
+<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv23t7joj20jg0jlwhf.jpg" alt=""></p>
+<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv2q0f0oj20kq0fvjtr.jpg" alt=""></p>
+<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv3std8mj207z05daab.jpg" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/large/59e77323jw1ezbuunzclbj20ga08cabs.jpg" alt="流程改进"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"</span><br><span class="line"></span><br><span class="line">http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://rapapi.net/rap.plugin.js?projectId=63"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line"></span><br><span class="line">	$.ajax(&#123;</span><br><span class="line"></span><br><span class="line">		url:<span class="string">"ceshi_link.json"</span>,</span><br><span class="line"></span><br><span class="line">		datatype:<span class="string">"json"</span>,</span><br><span class="line"></span><br><span class="line">		type:<span class="string">"get"</span>,</span><br><span class="line"></span><br><span class="line">		success:<span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">			<span class="comment">// body...</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://ww3.sinaimg.cn/large/59e77323jw1ezbv45zjlfj20ax0bf0tt.jpg" alt=""></p>
+<p>不方便的地方，本地自己部署</p>
+<hr>
+<p>数据可视化</p>
+<hr>
+<p>datav 数据流</p>
+<p><img src="http://ww4.sinaimg.cn/large/59e77323jw1ezbru0c8x0j208f08vab0.jpg" alt="datav"></p>
+<p>分屏处理 (城市模型贴图处理)</p>
+<p>canvas (处理100～1000数据)</p>
+<p>svg (处理1000～100000数据)</p>
+<p>webgl(处理100000＋数据)</p>
+<p>three.js</p>
+<p><a href="http://datavlab.org/datavjs/" target="_blank" rel="external">datav</a></p>
+<p><a href="http://datavlab.org/datavjs/#treemap" target="_blank" rel="external">demo</a></p>
+<p><a href="https://github.com/TBEDP/datavjs" target="_blank" rel="external">github</a></p>
+<p>相关推荐</p>
+<p>和antd配合的数据模块</p>
+<p><a href="https://site.alipay.net/datavisualization/ant-v/product/g2/" target="_blank" rel="external">G2</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbvgyujiyj20ft083mzb.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/large/59e77323]]>
+    </summary>
+    
+      <category term="活动" scheme="http://www.soledad.com.cn/tags/%E6%B4%BB%E5%8A%A8/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[阿里纪录片－扬子江中的大鳄有感]]></title>
@@ -1444,28 +1576,6 @@ utf8有Bom和无Bom之分
     </summary>
     
       <category term="未分类" scheme="http://www.soledad.com.cn/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[arguments的应用]]></title>
-    <link href="http://www.soledad.com.cn/2014/04/23/arguments-e7-9a-84-e5-ba-94-e7-94-a8/"/>
-    <id>http://www.soledad.com.cn/2014/04/23/arguments-e7-9a-84-e5-ba-94-e7-94-a8/</id>
-    <published>2014-04-23T01:55:47.000Z</published>
-    <updated>2015-10-17T04:04:41.352Z</updated>
-    <content type="html"><![CDATA[<p>arguments这种伪数组</p>
-<pre><code>可通过<span class="tag">Array</span><span class="class">.prototype</span><span class="class">.slice</span><span class="class">.call</span>(<span class="tag">arguments</span>);
-
-来转换为数组。
-
-<span class="tag">arguments</span>有一个<span class="tag">calle</span>函数指向自身，多用于递归的运算
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p>arguments这种伪数组</p>
-<pre><code>可通过<span class="tag">Array</span><span class="class">.prototype</span><span class="class">.slice</span><spa]]>
-    </summary>
-    
-      <category term="js" scheme="http://www.soledad.com.cn/categories/js/"/>
     
   </entry>
   
