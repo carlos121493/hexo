@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2015-12-25T06:17:05.611Z</updated>
+  <updated>2015-12-25T09:42:43.087Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -19,15 +19,14 @@
     <link href="http://www.soledad.com.cn/2015/12/25/D2%E5%A4%A7%E4%BC%9A%E6%94%B6%E8%8E%B7/"/>
     <id>http://www.soledad.com.cn/2015/12/25/D2大会收获/</id>
     <published>2015-12-25T06:16:35.000Z</published>
-    <updated>2015-12-25T06:17:05.611Z</updated>
+    <updated>2015-12-25T09:42:43.087Z</updated>
     <content type="html"><![CDATA[<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbvgyujiyj20ft083mzb.jpg" alt=""></p>
 <p><img src="http://ww3.sinaimg.cn/large/59e77323jw1ezbsalh64rj20ga099dgq.jpg" alt=""></p>
 <blockquote>
 <p>12月19日 阿里西溪园区 融合</p>
 </blockquote>
 <hr>
-<p>hybrird 移动端部分</p>
-<hr>
+<h2 id="hybrird_移动端部分">hybrird 移动端部分</h2><hr>
 <h3 id="1-从Web页面到Native_UI">1.从Web页面到Native UI</h3><p><img src="http://ww4.sinaimg.cn/large/59e77323jw1ezbqnx9h1hj20gs0gq77l.jpg" alt="blend"></p>
 <p><a href="http://clouda.baidu.com/blend/introduction/introduction" target="_blank" rel="external">!blend解决方案</a></p>
 <p><a href="http://clouda.baidu.com/blend2" target="_blank" rel="external">!blendUI</a></p>
@@ -54,12 +53,14 @@
 <li>github 地址</li>
 </ul>
 <p><a href="https://github.com/Clouda-team" target="_blank" rel="external">blend</a></p>
+<hr>
 <p>另外推荐两款类似</p>
 <ul>
 <li>Hbuilder 提供比较强大的bridge.js 提供页面组件，同时可以扩展nativeapi ，提供ide，云打包 </li>
 </ul>
 <p>不提供后端api</p>
 <p><a href="http://www.dcloud.io/" target="_blank" rel="external">dcloud</a> 简单易学，很多公司组织在用</p>
+<hr>
 <ul>
 <li>提供页面组件 后端api native</li>
 </ul>
@@ -76,10 +77,8 @@
 <p><a href="http://hackers-painters.github.io/samurai-native/" target="_blank" rel="external">offical官网</a></p>
 <p><a href="https://github.com/hackers-painters/samurai-native" target="_blank" rel="external">github地址</a></p>
 <hr>
-<p>web 组件 服务化</p>
-<hr>
-<p>1.ques q.js</p>
-<p><img src="http://ww3.sinaimg.cn/large/59e77323jw1ezbrlmozcsj208o08e0tn.jpg" alt=""></p>
+<h2 id="web_组件_服务化">web 组件 服务化</h2><hr>
+<h3 id="1-ques_q-js">1.ques q.js</h3><p><img src="http://ww3.sinaimg.cn/large/59e77323jw1ezbrlmozcsj208o08e0tn.jpg" alt=""></p>
 <p>属于借鉴了google流行框架polymer，和非主流框架vue.js</p>
 <p>q.js号称兼容到ie6，然而vue.js只支持到ie9</p>
 <p><a href="http://cn.vuejs.org/" target="_blank" rel="external">vue</a></p>
@@ -111,11 +110,6 @@
 <blockquote>
 <p>前端开发的福音</p>
 </blockquote>
-<p>开发现状</p>
-<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv12vdo2j20jc0inq6a.jpg" alt=""></p>
-<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv23t7joj20jg0jlwhf.jpg" alt=""></p>
-<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv2q0f0oj20kq0fvjtr.jpg" alt=""></p>
-<p><img src="http://ww2.sinaimg.cn/large/59e77323jw1ezbv3std8mj207z05daab.jpg" alt=""></p>
 <p><img src="http://ww1.sinaimg.cn/large/59e77323jw1ezbuunzclbj20ga08cabs.jpg" alt="流程改进"></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"</span><br><span class="line"></span><br><span class="line">http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://rapapi.net/rap.plugin.js?projectId=63"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line"></span><br><span class="line">	$.ajax(&#123;</span><br><span class="line"></span><br><span class="line">		url:<span class="string">"ceshi_link.json"</span>,</span><br><span class="line"></span><br><span class="line">		datatype:<span class="string">"json"</span>,</span><br><span class="line"></span><br><span class="line">		type:<span class="string">"get"</span>,</span><br><span class="line"></span><br><span class="line">		success:<span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">			<span class="comment">// body...</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="http://ww3.sinaimg.cn/large/59e77323jw1ezbv45zjlfj20ax0bf0tt.jpg" alt=""></p>
@@ -129,7 +123,7 @@
 <p>canvas (处理100～1000数据)</p>
 <p>svg (处理1000～100000数据)</p>
 <p>webgl(处理100000＋数据)</p>
-<p>three.js</p>
+<p><a href="http://threejs.org/" target="_blank" rel="external">three.js</a></p>
 <p><a href="http://datavlab.org/datavjs/" target="_blank" rel="external">datav</a></p>
 <p><a href="http://datavlab.org/datavjs/#treemap" target="_blank" rel="external">demo</a></p>
 <p><a href="https://github.com/TBEDP/datavjs" target="_blank" rel="external">github</a></p>
