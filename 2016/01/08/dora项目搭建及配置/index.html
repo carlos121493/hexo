@@ -63,7 +63,7 @@ atool-build应运而生此工具集合了
 1.配置好的模板，比较规范的配置方式
 
 2.可以额外自定义">
-<meta property="og:updated_time" content="2016-01-08T08:31:13.823Z">
+<meta property="og:updated_time" content="2016-01-08T08:35:34.387Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="dora项目搭建及配置">
 <meta name="twitter:description" content="起源
@@ -283,28 +283,66 @@ atool-build应运而生此工具集合了
 <p>不需要多个terminal或者多个命令，只要一键配成，傻瓜式。</p>
 <p>不过想用的更加可控起来还是需要进一步了解</p>
 <h3 id="a-安装方式">a.安装方式</h3><p>一般项目</p>
-<figure class="highlight"><figcaption><span>i dora dora-plugin-proxy dora-plugin-atool-build atool-build --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#30001;&#20110;dora-plugin-atool-build(&#21482;&#25511;&#21046;&#29983;&#21629;&#21608;&#26399;)&#37197;&#32622;&#22343;&#24314;&#31435;&#22312;atool-build&#19978;&#25152;&#20197;&#24517;&#39035;&#35201;&#35013;&#12290;&#10;&#10;&#10;&#10;----&#10;&#10;&#10;&#10;### b.dora&#37197;&#32622;&#26041;&#24335;&#10;&#10;&#10;- 1.&#22312;package.json&#19978;&#20889;&#20837;entry&#12290;&#27492;entry&#21644;webpack&#30340;&#26041;&#24335;&#19968;&#33268;&#10;&#10;&#9;&#26377;&#23383;&#27573;&#23545;&#35937;&#21644;&#25968;&#32452;&#24335;&#10;&#10;&#9;&#23545;&#35937;&#21487;&#20197;&#36866;&#29992;&#20110;&#22810;&#39029;&#30340;&#24320;&#21457;&#12290;&#10;&#10;- 2.&#36816;&#34892;./node_modules/atool-build/bin/atool-build&#10;&#10;&#9;&#35797;&#19968;&#35797;&#32534;&#35793;&#26159;&#21542;&#25104;&#21151;&#65292;dist&#30446;&#24405;&#20013;&#30340;&#32467;&#26500;&#26159;&#19981;&#26159;&#33258;&#24049;&#24819;&#35201;&#30340;&#10;&#10;&#9;&#9;&#22914;&#26524;&#19981;&#34892;&#21487;&#33021;&#38656;&#35201;&#39069;&#22806;&#30340;&#37197;&#32622;&#65292;&#27604;&#22914;&#26377;&#30340;node_modules&#37324;&#38754;&#26377;.tpl&#25991;&#20214;&#12290;&#12290;&#12290;&#10;&#10;- 3.&#36816;&#34892;dora -p 8001 --plugins atool-build&#10;&#10;&#9;http://127.0.0.1:8001/[entry].js&#10;&#10;&#9;&#26597;&#30475;&#25991;&#20214;&#26159;&#19981;&#26159;&#24819;&#35201;&#30340;&#12290;&#10;&#9;- 4.&#37197;&#32622;&#39029;&#38754;&#24341;&#20837;&#10;&#10;&#9;   &#22914;&#26524;&#26159;&#22312;&#21518;&#31471;&#27169;&#26495;&#20013;&#24341;&#20837;&#38656;&#35201;&#29992;&#32477;&#23545;&#38142;&#25509;&#20195;&#29702;&#30340;&#26041;&#24335;&#12290;&#10;&#10;&#9;   &#22312;entry.js&#21069;&#21152;&#20837;common.js&#36825;&#20010;&#24517;&#39035;&#24471;&#21152;&#65292;&#19981;&#33021;&#36890;&#36807;&#35206;&#30422;webpack&#37197;&#32622;&#30465;&#30053;;&#10;&#10;&#9;- 5.&#37197;&#32622;package.json build</span><br></pre></td></tr></table></figure>
-<pre><code><span class="xml">script:</span><span class="expression">{
-
-    <span class="string">"build"</span>:<span class="string">"dora -p 8001 --plugins atool-build"</span>
-
-}</span><span class="xml">
-
-<span class="comment"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#9;*.sofa&#39033;&#30446;&#25913;&#36827;,&#25913;&#21160;&#28857;&#10;&#10;&#9;&#9;- &#23433;&#35013;dora, atool-build&#10;&#10;&#9;&#9;- package.json&#37197;&#32622;entry&#21644;script&#10;&#10;&#9;&#9;- &#39029;&#38754;&#20013;&#37197;&#32622;common.js&#21644;entry.js&#10;&#10;&#9;&#9;- &#32452;&#20214;&#19981;&#36866;&#23452;&#21040;&#24773;&#20917;&#38656;&#35201;&#21333;&#29420;&#37197;webpack&#10;&#10;&#10;&#10;---&#10;&#10;&#10;c.dora&#20195;&#29702;&#26041;&#24335;&#10;&#10;&#23545;&#20110;&#32431;&#21069;&#31471;&#25110;&#32773;&#38745;&#24577;&#39029;&#38754;&#26159;&#38750;&#24120;&#26041;&#20415;&#30340;&#12290;&#10;&#10;- 1.&#25191;&#34892; ```npm i dora-plugin-proxy --save</span><br></pre></td></tr></table></figure></span></span>
-</code></pre><ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i dora dora-plugin-proxy dora-plugin-atool-build atool-build --save</span><br></pre></td></tr></table></figure>
+<p>由于dora-plugin-atool-build(只控制生命周期)配置均建立在atool-build上所以必须要装。</p>
+<hr>
+<h3 id="b-dora配置方式">b.dora配置方式</h3><ul>
+<li>1.在package.json上写入entry。此entry和webpack的方式一致</li>
+</ul>
+<p>有字段对象和数组式</p>
+<p>对象可以适用于多页的开发。</p>
+<ul>
+<li>2.运行./node_modules/atool-build/bin/atool-build</li>
+</ul>
+<p>试一试编译是否成功，dist目录中的结构是不是自己想要的</p>
+<p>如果不行可能需要额外的配置，比如有的node_modules里面有.tpl文件。。。</p>
+<ul>
+<li>3.运行dora -p 8001 –plugins atool-build</li>
+</ul>
+<p><a href="http://127.0.0.1:8001/[entry].js" target="_blank" rel="external">http://127.0.0.1:8001/[entry].js</a></p>
+<p>查看文件是不是想要的。</p>
+<ul>
+<li>4.配置页面引入</li>
+</ul>
+<p>如果是在后端模板中引入需要用绝对链接代理的方式。</p>
+<p>在entry.js前加入common.js这个必须得加，不能通过覆盖webpack配置省略;</p>
+<ul>
+<li>5.配置package.json build</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">script:&#123;</span><br><span class="line"></span><br><span class="line">	<span class="string">"build"</span>:<span class="string">"dora -p 8001 --plugins atool-build"</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>*.sofa项目改进,改动点</p>
+<pre><code>-<span class="ruby"> 安装dora, atool-build
+</span>
+-<span class="ruby"> package.json配置entry和script
+</span>
+-<span class="ruby"> 页面中配置common.js和entry.js
+</span>
+-<span class="ruby"> 组件不适宜到情况需要单独配webpack</span>
+</code></pre><hr>
+<p>c.dora代理方式</p>
+<p>对于纯前端或者静态页面是非常方便的。</p>
+<ul>
+<li><p>1.执行 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i dora-plugin-proxy --save</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>2.在chrome或者其他插件中配置将要代理的域名比如/a.alipayobjects.com对应到监听的本地端口(默认8989) 参考文档(<a href="https://github.com/dora-js/dora-plugin-proxy" target="_blank" rel="external"></a>当然这一步非必需，主要是跨域代理的话需要，然而现在跨域代理有些问题)</p>
 </li>
 <li><p>3.在根目录下用mockjs配置proxy.config.js文件将访问对方式和mock数据对应如</p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#9;var mockjs = require(&#39;mockjs&#39;);&#10;&#10;module.exports = &#123;&#10;&#10;  &#39;GET /api/users/:id&#39;: mockjs.mock(&#123;name: &#39;@Name&#39;&#125;),&#10;&#10;&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">	<span class="keyword">var</span> mockjs = <span class="built_in">require</span>(<span class="string">'mockjs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line"></span><br><span class="line">  <span class="string">'GET /api/users/:id'</span>: mockjs.mock(&#123;name: <span class="string">'@Name'</span>&#125;),</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>可以在根目录加入rule.js配置anyproxy的代理方式</p>
 <p><a href="https://github.com/alibaba/anyproxy/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%96%B0%E8%BD%AE%E5%AD%90%EF%BC%9Aanyproxy" target="_blank" rel="external"></a></p>
 <hr>
-<h3 id="d-babel项目babel配置">d.babel项目babel配置</h3><figure class="highlight"><figcaption><span>i babel-cli babel-core babel-preset-stage-0 babel-preset-es2015 babel-loader --save;```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#28982;&#21518;&#22312;package.json&#30340;&#39;babel&#39;&#23383;&#27573;&#25110;&#32773;.babelrc&#20013;&#21152;&#20837;&#10;&#10;```&#123;&#10;&#10;&#9;presets:[&#39;es2015&#39;,&#39;stage0&#39;]&#10;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="d-babel项目babel配置">d.babel项目babel配置</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i babel-cli babel-core babel-preset-stage-<span class="number">0</span> babel-preset-es2015 babel-loader --save;</span><br></pre></td></tr></table></figure>
+<p>然后在package.json的’babel’字段或者.babelrc中加入</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">	presets:[<span class="string">'es2015'</span>,<span class="string">'stage0'</span>]</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>如果需要react</p>
-<p>执行 <figure class="highlight"><figcaption><span>i babel-preset-react --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#20877;&#22312;&#37197;&#32622;&#30340;presets&#39033;&#20013;&#21152;&#20837;react&#10;&#10;&#10;&#10;&#22914;&#26524;&#38656;&#35201;antd&#32452;&#20214;&#10;&#10;&#25191;&#34892; ```npm i antd babel-plugin-add-module-exports --save</span><br></pre></td></tr></table></figure></p>
-<p>在初始化的文件夹中引入 <code>import &#39;antd/lib/index.css&#39;;</code></p>
+<p>执行 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i babel-preset-react --save</span><br></pre></td></tr></table></figure></p>
+<p>再在配置的presets项中加入react</p>
+<p>如果需要antd组件</p>
+<p>执行<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i antd babel-plugin-add-<span class="built_in">module</span>-exports --save</span><br></pre></td></tr></table></figure></p>
+<p>在初始化的文件夹中引入<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'antd/lib/index.css'</span>;</span><br></pre></td></tr></table></figure></p>
 <hr>
 <h3 id="e-如何写一个dora插件">e.如何写一个dora插件</h3><p>dora是建立在koa服务器基础上，此为著名程序员tj的一个项目。和express差不多</p>
 <p>因此dora建立在中间件的基础上，建立了几个生命周期。以供更方便的处理标准化工程</p>
@@ -493,7 +531,7 @@ atool-build应运而生此工具集合了
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#起源"><span class="nav-number">1.</span> <span class="nav-text">起源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-安装方式"><span class="nav-number">1.1.</span> <span class="nav-text">a.安装方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-babel项目babel配置"><span class="nav-number">1.2.</span> <span class="nav-text">d.babel项目babel配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-如何写一个dora插件"><span class="nav-number">1.3.</span> <span class="nav-text">e.如何写一个dora插件</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#起源"><span class="nav-number">1.</span> <span class="nav-text">起源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-安装方式"><span class="nav-number">1.1.</span> <span class="nav-text">a.安装方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-dora配置方式"><span class="nav-number">1.2.</span> <span class="nav-text">b.dora配置方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-babel项目babel配置"><span class="nav-number">1.3.</span> <span class="nav-text">d.babel项目babel配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-如何写一个dora插件"><span class="nav-number">1.4.</span> <span class="nav-text">e.如何写一个dora插件</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
