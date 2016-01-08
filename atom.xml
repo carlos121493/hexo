@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2015-12-25T09:42:43.087Z</updated>
+  <updated>2016-01-08T08:31:13.823Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -13,6 +13,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[dora项目搭建及配置]]></title>
+    <link href="http://www.soledad.com.cn/2016/01/08/dora%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
+    <id>http://www.soledad.com.cn/2016/01/08/dora项目搭建及配置/</id>
+    <published>2016-01-08T08:27:49.000Z</published>
+    <updated>2016-01-08T08:31:13.823Z</updated>
+    <content type="html"><![CDATA[<h2 id="起源">起源</h2><blockquote>
+<p>原来的解决方案，如fis和spm 都有自己的install源，同样需要build和server</p>
+</blockquote>
+<p>命令行的方式已然使前端前进一大步，webpack可以直接引用npm的源，所以也免去了工具额外install的方式。但由于webpack 太难配。。。需要配置很多插件，这些对于开发成本比较高。</p>
+<p>atool-build应运而生此工具集合了</p>
+<ul>
+<li><p>1.配置好的模板，比较规范的配置方式</p>
+</li>
+<li><p>2.可以额外自定义配置</p>
+</li>
+</ul>
+<p>atool-build很方便，算是包了一层的webpack，但是起server还需要另外起。</p>
+<p>所以dora应运而生。</p>
+<p>dora将编译的过程放在自己起server的生命周期中，只要一个命令就完成</p>
+<p>build watch server的阶段。</p>
+<p>不需要多个terminal或者多个命令，只要一键配成，傻瓜式。</p>
+<p>不过想用的更加可控起来还是需要进一步了解</p>
+<h3 id="a-安装方式">a.安装方式</h3><p>一般项目</p>
+<figure class="highlight"><figcaption><span>i dora dora-plugin-proxy dora-plugin-atool-build atool-build --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#30001;&#20110;dora-plugin-atool-build(&#21482;&#25511;&#21046;&#29983;&#21629;&#21608;&#26399;)&#37197;&#32622;&#22343;&#24314;&#31435;&#22312;atool-build&#19978;&#25152;&#20197;&#24517;&#39035;&#35201;&#35013;&#12290;&#10;&#10;&#10;&#10;----&#10;&#10;&#10;&#10;### b.dora&#37197;&#32622;&#26041;&#24335;&#10;&#10;&#10;- 1.&#22312;package.json&#19978;&#20889;&#20837;entry&#12290;&#27492;entry&#21644;webpack&#30340;&#26041;&#24335;&#19968;&#33268;&#10;&#10;&#9;&#26377;&#23383;&#27573;&#23545;&#35937;&#21644;&#25968;&#32452;&#24335;&#10;&#10;&#9;&#23545;&#35937;&#21487;&#20197;&#36866;&#29992;&#20110;&#22810;&#39029;&#30340;&#24320;&#21457;&#12290;&#10;&#10;- 2.&#36816;&#34892;./node_modules/atool-build/bin/atool-build&#10;&#10;&#9;&#35797;&#19968;&#35797;&#32534;&#35793;&#26159;&#21542;&#25104;&#21151;&#65292;dist&#30446;&#24405;&#20013;&#30340;&#32467;&#26500;&#26159;&#19981;&#26159;&#33258;&#24049;&#24819;&#35201;&#30340;&#10;&#10;&#9;&#9;&#22914;&#26524;&#19981;&#34892;&#21487;&#33021;&#38656;&#35201;&#39069;&#22806;&#30340;&#37197;&#32622;&#65292;&#27604;&#22914;&#26377;&#30340;node_modules&#37324;&#38754;&#26377;.tpl&#25991;&#20214;&#12290;&#12290;&#12290;&#10;&#10;- 3.&#36816;&#34892;dora -p 8001 --plugins atool-build&#10;&#10;&#9;http://127.0.0.1:8001/[entry].js&#10;&#10;&#9;&#26597;&#30475;&#25991;&#20214;&#26159;&#19981;&#26159;&#24819;&#35201;&#30340;&#12290;&#10;&#9;- 4.&#37197;&#32622;&#39029;&#38754;&#24341;&#20837;&#10;&#10;&#9;   &#22914;&#26524;&#26159;&#22312;&#21518;&#31471;&#27169;&#26495;&#20013;&#24341;&#20837;&#38656;&#35201;&#29992;&#32477;&#23545;&#38142;&#25509;&#20195;&#29702;&#30340;&#26041;&#24335;&#12290;&#10;&#10;&#9;   &#22312;entry.js&#21069;&#21152;&#20837;common.js&#36825;&#20010;&#24517;&#39035;&#24471;&#21152;&#65292;&#19981;&#33021;&#36890;&#36807;&#35206;&#30422;webpack&#37197;&#32622;&#30465;&#30053;;&#10;&#10;&#9;- 5.&#37197;&#32622;package.json build</span><br></pre></td></tr></table></figure>
+<pre><code><span class="xml">script:</span><span class="expression">{
+
+    <span class="string">"build"</span>:<span class="string">"dora -p 8001 --plugins atool-build"</span>
+
+}</span><span class="xml">
+
+<span class="comment"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#9;*.sofa&#39033;&#30446;&#25913;&#36827;,&#25913;&#21160;&#28857;&#10;&#10;&#9;&#9;- &#23433;&#35013;dora, atool-build&#10;&#10;&#9;&#9;- package.json&#37197;&#32622;entry&#21644;script&#10;&#10;&#9;&#9;- &#39029;&#38754;&#20013;&#37197;&#32622;common.js&#21644;entry.js&#10;&#10;&#9;&#9;- &#32452;&#20214;&#19981;&#36866;&#23452;&#21040;&#24773;&#20917;&#38656;&#35201;&#21333;&#29420;&#37197;webpack&#10;&#10;&#10;&#10;---&#10;&#10;&#10;c.dora&#20195;&#29702;&#26041;&#24335;&#10;&#10;&#23545;&#20110;&#32431;&#21069;&#31471;&#25110;&#32773;&#38745;&#24577;&#39029;&#38754;&#26159;&#38750;&#24120;&#26041;&#20415;&#30340;&#12290;&#10;&#10;- 1.&#25191;&#34892; ```npm i dora-plugin-proxy --save</span><br></pre></td></tr></table></figure></span></span>
+</code></pre><ul>
+<li><p>2.在chrome或者其他插件中配置将要代理的域名比如/a.alipayobjects.com对应到监听的本地端口(默认8989) 参考文档(<a href="https://github.com/dora-js/dora-plugin-proxy" target="_blank" rel="external"></a>当然这一步非必需，主要是跨域代理的话需要，然而现在跨域代理有些问题)</p>
+</li>
+<li><p>3.在根目录下用mockjs配置proxy.config.js文件将访问对方式和mock数据对应如</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#9;var mockjs = require(&#39;mockjs&#39;);&#10;&#10;module.exports = &#123;&#10;&#10;  &#39;GET /api/users/:id&#39;: mockjs.mock(&#123;name: &#39;@Name&#39;&#125;),&#10;&#10;&#125;;</span><br></pre></td></tr></table></figure>
+<p>可以在根目录加入rule.js配置anyproxy的代理方式</p>
+<p><a href="https://github.com/alibaba/anyproxy/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%96%B0%E8%BD%AE%E5%AD%90%EF%BC%9Aanyproxy" target="_blank" rel="external"></a></p>
+<hr>
+<h3 id="d-babel项目babel配置">d.babel项目babel配置</h3><figure class="highlight"><figcaption><span>i babel-cli babel-core babel-preset-stage-0 babel-preset-es2015 babel-loader --save;```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#28982;&#21518;&#22312;package.json&#30340;&#39;babel&#39;&#23383;&#27573;&#25110;&#32773;.babelrc&#20013;&#21152;&#20837;&#10;&#10;```&#123;&#10;&#10;&#9;presets:[&#39;es2015&#39;,&#39;stage0&#39;]&#10;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<p>如果需要react</p>
+<p>执行 <figure class="highlight"><figcaption><span>i babel-preset-react --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#20877;&#22312;&#37197;&#32622;&#30340;presets&#39033;&#20013;&#21152;&#20837;react&#10;&#10;&#10;&#10;&#22914;&#26524;&#38656;&#35201;antd&#32452;&#20214;&#10;&#10;&#25191;&#34892; ```npm i antd babel-plugin-add-module-exports --save</span><br></pre></td></tr></table></figure></p>
+<p>在初始化的文件夹中引入 <code>import &#39;antd/lib/index.css&#39;;</code></p>
+<hr>
+<h3 id="e-如何写一个dora插件">e.如何写一个dora插件</h3><p>dora是建立在koa服务器基础上，此为著名程序员tj的一个项目。和express差不多</p>
+<p>因此dora建立在中间件的基础上，建立了几个生命周期。以供更方便的处理标准化工程</p>
+<p><a href="https://github.com/dora-js/dora/blob/greenkeeper-babel-core-6.4.0/docs/How-To-Write-A-Dora-Plugin.md" target="_blank" rel="external"></a></p>
+<p>通过dora -p 8001 ./custom-plugin.js进行插件的调试。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="起源">起源</h2><blockquote>
+<p>原来的解决方案，如fis和spm 都有自己的install源，同样需要build和server</p>
+</blockquote>
+<p>命令行的方式已然使前端前进一大步，webpack可以直接引用npm的源，]]>
+    </summary>
+    
+      <category term="javascript 框架" scheme="http://www.soledad.com.cn/tags/javascript-%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[D2大会收获]]></title>
@@ -1528,48 +1591,6 @@ grunt是自动化工具有很多插件。但是里面有很多坑和难点。
     </summary>
     
       <category term="js" scheme="http://www.soledad.com.cn/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[UTF-8 BOM问题]]></title>
-    <link href="http://www.soledad.com.cn/2014/04/24/utf-8-bom-e9-97-ae-e9-a2-98/"/>
-    <id>http://www.soledad.com.cn/2014/04/24/utf-8-bom-e9-97-ae-e9-a2-98/</id>
-    <published>2014-04-24T02:35:27.000Z</published>
-    <updated>2015-10-17T04:04:41.176Z</updated>
-    <content type="html"><![CDATA[<p>BOM造成很多问题，却不知为何。如何该用如果不该用</p>
-<pre><code>前些天出了点小问题关于字符编码的，不过莫名其妙的好了，现在还不知道为何。
-
-我们的页面是gb2312或者gbk的要看区域。但是js统一使用utf8进行编码
-
-utf8有Bom和无Bom之分
-
-其实他们的区别就是没有区别。Bom是<span class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">dir</span>=<span class="value">"auto"</span>&gt;</span></span>字节顺序标记，<span class="xml"><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span>[<span class="link_label">UTF-8</span>](<span class="link_url">http://zh.wikipedia.org/wiki/UTF-8 "UTF-8"</span>)则没有字节顺序的议题，但是用记事本或者很多工具生成的时候
-
-却会出现这个，它只用来标示一个UTF-8的文件，许多[<span class="link_label">视窗</span>](<span class="link_url">http://zh.wikipedia.org/wiki/%E8%A6%96%E7%AA%97%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1 "视窗操作系统"</span>)程序（包含[<span class="link_label">记事本</span>](<span class="link_url">http://zh.wikipedia.org/wiki/%E8%A8%98%E4%BA%8B%E6%9C%AC "记事本"</span>)）会添加字节顺序标记到UTF-8文件。
-
-然而在Unix系统中却不这样使用。
-
-但是在php文件中，如果没有激活输出缓冲（output buffering），它会使得页面内容开始被送往浏览器（即：用户头文件已被提交）
-
-在线上环境中utf8版本的文件头部也会多加一个乱码，如果在页面中则很容易出现头部出现一个空格。
-
-所以副作用太大了，有木有。
-
-所以珍爱生命，远离BOM格式了吧。尤其是服务器脚本程序和页面html中。但是作为js这种弱脚本文件，没有太大影响，还是尽量设置为非BOM吧
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p>BOM造成很多问题，却不知为何。如何该用如果不该用</p>
-<pre><code>前些天出了点小问题关于字符编码的，不过莫名其妙的好了，现在还不知道为何。
-
-我们的页面是gb2312或者gbk的要看区域。但是js统一使用utf8进行编码
-
-utf8有Bom和无Bom之分
-
-]]>
-    </summary>
-    
-      <category term="未分类" scheme="http://www.soledad.com.cn/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
   </entry>
   
