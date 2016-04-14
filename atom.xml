@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2016-01-08T08:35:34.387Z</updated>
+  <updated>2016-04-14T11:33:52.203Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -15,12 +15,110 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[webstorm,sublime,atom配置eslint及对比]]></title>
+    <link href="http://www.soledad.com.cn/2016/04/13/atom%E9%85%8D%E7%BD%AEeslint%E5%8F%8A%E5%AF%B9%E6%AF%94/"/>
+    <id>http://www.soledad.com.cn/2016/04/13/atom配置eslint及对比/</id>
+    <published>2016-04-13T08:23:17.000Z</published>
+    <updated>2016-04-14T11:33:52.203Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>eslint 是js代码检查工具，有很多很方便设置的规则，能够极大支持react，babel，对代码质量有深远的影响<br>如果对eslint项目配置不理解可以移步到这里</p>
+</blockquote>
+<h3 id="sublime">sublime</h3><p>sublime里面设置eslint是非常方便<br>只需要安装SublimeLinter装好后可在此看到<br><img src="https://os.alipayobjects.com/rmsportal/oYZVLujSyMtmrsn.png" alt="SublimeLinter"><br>然后安装一下 <a href="https://github.com/roadhump/SublimeLinter-eslint" target="_blank" rel="external">SublimeLinter-eslint</a><br>就可以愉快的玩耍了，效果如下，会自动监测项目根目录中的.eslintrc。<br>具体提示在下方，会有简单的报错和报错原因，对于基本的检查比不可少。<br><img src="https://os.alipayobjects.com/rmsportal/VBQzTtXYTYrQawS.png" alt=""></p>
+<p>要安装2个，需要输入对应脚步对应版本号，支持sublime3.0<br>可以在配置中设置高亮的样式效果等。</p>
+<h4 id="综合评价＊＊＊＊4-0">综合评价＊＊＊＊4.0</h4><hr>
+<h3 id="webstorm">webstorm</h3><p>webstorm是自带的。不用做任何组件的安装，但是要配置一下。<br>点击File=&gt;Default Setting 搜索一下eslint<br><img src="https://os.alipayobjects.com/rmsportal/PgNsbdABAaxYoRO.png" alt=""><br>只要点击一下enable方式即可。是不是很方便。</p>
+<blockquote>
+<p>注意：但有的时候自动搜索并不准确，尤其是其默认用的是全局的eslint来进行甄别，和本地版本不一致。<br>如果出现不准确的情况要自行配置一下</p>
+<ul>
+<li>检测效果如下，和eslint很像，但是从右边一列的颜色里可以看到有红色的小行来提示，并且可以鼠标hover看错误提示，画面太美。。。</li>
+</ul>
+</blockquote>
+<p><img src="https://os.alipayobjects.com/rmsportal/TeqiNdDZQGALnDW.png" alt=""><br><img src="https://os.alipayobjects.com/rmsportal/pLLPFwnoZKJePfQ.png" alt=""></p>
+<p>但是由于webstorm本身要钱，而且超级吃内存，所以。。。</p>
+<h4 id="综合评价＊＊＊＊4-5">综合评价＊＊＊＊4.5</h4><hr>
+<h3 id="atom">atom</h3><p>atom是近期开发的独起之秀，不但有sublime的优点，完全是github团队开发，拥有强势资源，插件安装也异常方便，强力推荐。<br>但是同事却略有不接受，不知为何还是各区所需吧。<br>安装方式非常简单。<br>下载了atom后自动安装类似npm的包管理工具apm<br>只要在命令行里打出<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install linter;&#10;apm install linter-eslint;</span><br></pre></td></tr></table></figure></p>
+<p>即可，同时可以通过命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm ls</span><br></pre></td></tr></table></figure></p>
+<p>来显示安装了哪些组件。</p>
+<p>好了，来看看效果<br><img src="https://os.alipayobjects.com/rmsportal/eZtOVXGQQmZSeqD.png" alt=""><br>不仅可以看到错误，同时光标移动过去还有小弹窗，底部还有行数，点击后直接转过去。<br>同时可以看到一个文件或者整个项目里的问题。<br><img src="https://os.alipayobjects.com/rmsportal/BJQegObVkiJFbjC.png" alt=""><br>我的天噜。。。</p>
+<h4 id="完美＊＊＊＊＊五星">完美＊＊＊＊＊五星</h4><p>同时在开发时候，如果不想显示错误，想一次提交的时候再看问题，也完全可以通过command + shift + p调出控制台输入eslint就会有各种命令。<br>选择Toggle即可切换提示错误面板，还有其他一些命令不一一介绍了。<br><img src="https://os.alipayobjects.com/rmsportal/sFAeYkFukNCavUQ.png" alt=""></p>
+<p>如果对eslint不是很了解可以看这里</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>eslint 是js代码检查工具，有很多很方便设置的规则，能够极大支持react，babel，对代码质量有深远的影响<br>如果对eslint项目配置不理解可以移步到这里</p>
+</blockquote>
+<h3 id="sublime">sub]]>
+    </summary>
+    
+      <category term="webstorm sublime atom eslint tool" scheme="http://www.soledad.com.cn/tags/webstorm-sublime-atom-eslint-tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[eslint在项目中的使用]]></title>
+    <link href="http://www.soledad.com.cn/2016/04/13/eslint%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://www.soledad.com.cn/2016/04/13/eslint在项目中的使用/</id>
+    <published>2016-04-13T06:11:15.000Z</published>
+    <updated>2016-04-13T08:19:28.513Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>项目的规范和可维护性非常重要。不好的文档难以维护。影响维护的心情，看看下面的例子，能不能好好的玩耍了。</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/30776912" target="_blank" rel="external">公司项目里面看到过哪些操蛋的代码</a></li>
+</ul>
+</blockquote>
+<p>所以最好就是, 一步到位的完美<br>一鼓作气，再而三，三而竭</p>
+<p>以前有jshint，这样的检查工具。打包前进行检查，随着代码量的递增已经完全不满足要求。<br>现在更多的是需要commit就检查一次，输入一下就检查一次。</p>
+<hr>
+<h3 id="如果需要commit检查一次，">如果需要commit检查一次，</h3><ul>
+<li><p>只要下载<a href="https://www.npmjs.com/package/precommit" target="_blank" rel="external">precommit</a>库并在package里面配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install precommit</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>并在package.json文件中，配置precommit和相应的scripts即可。</p>
+</li>
+<li>比如要在提交前用jshint进行检查，只要在package.json中写入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;scripts&#34;: &#123;&#10;  &#34;lint&#34;: &#34;jshint&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;pre-commit&#34;: [&#10;   &#34;lint&#34;&#10; ],</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="eslint">eslint</h3><p> 随着时代的发展，对react支持比较好的eslint出场了，<br> eslint有react和babel的插件可以很好的支持react项目的开发。<br> 而现在市面上非常有名的规范<a href="https://www.npmjs.com/package/eslint-config-airbnb" target="_blank" rel="external">eslint-config-airbnb</a>正是基于此</p>
+<p> 想用这套规范开发react项目非常方便</p>
+<ul>
+<li><p>1.只要</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint eslint-babel eslint-plugin-react eslint-config-react</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.然后在package.json里面配置一下相应规则即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;scripts&#34;: &#123;&#10;&#9;&#34;lint&#34;: &#34;eslint --ext .js,.jsx&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>3.在根目录下新建.eslintrc</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> &#123;&#10;  &#34;extends&#34;: &#34;eslint-config-airbnb&#34;,&#10;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>大功告成，<br>当我们执行<figure class="highlight"><figcaption><span>run lint ``` 或者 ``` git comit xxx ```看看效果</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#20986;&#38169;&#20449;&#24687;&#37324;&#20250;&#21253;&#21547;&#21738;&#20010;&#25991;&#20214;&#21738;&#19968;&#34892;&#20160;&#20040;&#21407;&#22240;&#20986;&#38169;&#12290;&#10;![](https://os.alipayobjects.com/rmsportal/pwMKnVPgewojvph.png)&#10;&#35814;&#32454;&#30340;&#35268;&#21017;&#21487;&#20197;&#38405;&#35835;&#10;[airbnb-config](https://github.com/sivan/javascript-style-guide/blob/master/es5/README.md)&#10;&#10;---&#10;&#10;### &#35268;&#21017;&#30340;&#25193;&#23637;&#10;&#20855;&#20307;&#30340;&#35268;&#21017;&#21253;&#21547;bable-eslint &#21644; eslint-plugin-react&#20004;&#37096;&#20998;&#10;&#20197;&#19979;&#26159;&#19968;&#20123;&#35268;&#21017;&#30340;&#35828;&#26126;&#21487;&#20197;&#22312;.eslintrc&#20013;&#36827;&#34892;&#35206;&#30422;,&#24403;&#28982;&#36825;&#20123;&#35268;&#21017;&#23436;&#20840;&#21487;&#20197;&#30475;eslint-config-airbnb&#30340;&#28304;&#30721;&#23545;&#20854;&#36827;&#34892;&#35206;&#30422;&#10;&#10;[eslint](http://eslint.org/docs/rules/)&#10;[eslint-react](https://github.com/yannickcr/eslint-plugin-react)&#10;&#27604;&#22914;&#25105;&#29616;&#22312;&#19981;&#24076;&#26395;&#25972;&#20010;&#25991;&#20214;&#37324;&#38754;&#20986;&#29616;alert&#65292;&#21487;&#20197;&#36825;&#26679;&#22312;.eslintrc&#20013;&#37197;&#32622;</span><br></pre></td></tr></table></figure></p>
+<p>{<br>    “rules”: {<br>      “no-alert”: 0,<br>     }<br> }<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#36825;&#20010;&#24050;&#32463;&#22312;eslint-config-airbnb&#20013;&#24050;&#32463;&#26377;&#35828;&#26126;&#10;&#25152;&#20197;&#22914;&#26524;&#24819;&#22312;&#32487;&#25215;airbnb&#35268;&#21017;&#21518;&#23545;&#23545;&#20854;&#36827;&#34892;&#35206;&#30422;&#21487;&#20197;&#36825;&#26679;&#20570;</span><br></pre></td></tr></table></figure></p>
+<p>{<br>    “extends”: “eslint-config-airbnb”,<br>    “rules”: {<br>      “no-alert”: 0,<br>     }<br> }<br> ```</p>
+<hr>
+<p>最后如果想了解如何使用ide支持eslint，能够一边书写一边查错，可移步到这里。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>项目的规范和可维护性非常重要。不好的文档难以维护。影响维护的心情，看看下面的例子，能不能好好的玩耍了。</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/30776912" target="_]]>
+    </summary>
+    
+      <category term="eslint react babel" scheme="http://www.soledad.com.cn/tags/eslint-react-babel/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[dora项目搭建及配置]]></title>
     <link href="http://www.soledad.com.cn/2016/01/08/dora%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
     <id>http://www.soledad.com.cn/2016/01/08/dora项目搭建及配置/</id>
     <published>2016-01-08T08:27:49.000Z</published>
-    <updated>2016-01-08T08:35:34.387Z</updated>
-    <content type="html"><![CDATA[<h2 id="起源">起源</h2><blockquote>
+    <updated>2016-01-08T08:41:45.807Z</updated>
+    <content type="html"><![CDATA[<h2 id="起源">起源</h2><p><img src="https://camo.githubusercontent.com/c4fd98749411cd9795b1fac25eab4d62dbd1a297/68747470733a2f2f6f732e616c697061796f626a656374732e636f6d2f726d73706f7274616c2f556e706a4852546e6b4a6c486658782e706e67" alt=""></p>
+<p><a href="https://github.com/dora-js/dora" target="_blank" rel="external">dora</a></p>
+<blockquote>
 <p>原来的解决方案，如fis和spm 都有自己的install源，同样需要build和server</p>
 </blockquote>
 <p>命令行的方式已然使前端前进一大步，webpack可以直接引用npm的源，所以也免去了工具额外install的方式。但由于webpack 太难配。。。需要配置很多插件，这些对于开发成本比较高。</p>
@@ -87,7 +185,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">	<span class="keyword">var</span> mockjs = <span class="built_in">require</span>(<span class="string">'mockjs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line"></span><br><span class="line">  <span class="string">'GET /api/users/:id'</span>: mockjs.mock(&#123;name: <span class="string">'@Name'</span>&#125;),</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>可以在根目录加入rule.js配置anyproxy的代理方式</p>
-<p><a href="https://github.com/alibaba/anyproxy/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%96%B0%E8%BD%AE%E5%AD%90%EF%BC%9Aanyproxy" target="_blank" rel="external"></a></p>
+<p><a href="https://github.com/alibaba/anyproxy/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%96%B0%E8%BD%AE%E5%AD%90%EF%BC%9Aanyproxy" target="_blank" rel="external">anyproxy rule</a></p>
 <hr>
 <h3 id="d-babel项目babel配置">d.babel项目babel配置</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i babel-cli babel-core babel-preset-stage-<span class="number">0</span> babel-preset-es2015 babel-loader --save;</span><br></pre></td></tr></table></figure>
 <p>然后在package.json的’babel’字段或者.babelrc中加入</p>
@@ -101,14 +199,11 @@
 <hr>
 <h3 id="e-如何写一个dora插件">e.如何写一个dora插件</h3><p>dora是建立在koa服务器基础上，此为著名程序员tj的一个项目。和express差不多</p>
 <p>因此dora建立在中间件的基础上，建立了几个生命周期。以供更方便的处理标准化工程</p>
-<p><a href="https://github.com/dora-js/dora/blob/greenkeeper-babel-core-6.4.0/docs/How-To-Write-A-Dora-Plugin.md" target="_blank" rel="external"></a></p>
+<p><a href="https://github.com/dora-js/dora/blob/greenkeeper-babel-core-6.4.0/docs/How-To-Write-A-Dora-Plugin.md" target="_blank" rel="external">dora插件写法</a></p>
 <p>通过dora -p 8001 ./custom-plugin.js进行插件的调试。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="起源">起源</h2><blockquote>
-<p>原来的解决方案，如fis和spm 都有自己的install源，同样需要build和server</p>
-</blockquote>
-<p>命令行的方式已然使前端前进一大步，webpack可以直接引用npm的源，]]>
+    <![CDATA[<h2 id="起源">起源</h2><p><img src="https://camo.githubusercontent.com/c4fd98749411cd9795b1fac25eab4d62dbd1a297/68747470733a2f2f6f732e616c697061]]>
     </summary>
     
       <category term="javascript 框架" scheme="http://www.soledad.com.cn/tags/javascript-%E6%A1%86%E6%9E%B6/"/>
@@ -1329,306 +1424,6 @@ object对象一般有<span class="tag">a</span>.其他函数]]>
     </summary>
     
       <category term="未分类" scheme="http://www.soledad.com.cn/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[继承之mutable]]></title>
-    <link href="http://www.soledad.com.cn/2014/05/05/e7-bb-a7-e6-89-bf-e4-b9-8bmutable/"/>
-    <id>http://www.soledad.com.cn/2014/05/05/e7-bb-a7-e6-89-bf-e4-b9-8bmutable/</id>
-    <published>2014-05-05T11:24:10.000Z</published>
-    <updated>2015-10-17T04:04:40.684Z</updated>
-    <content type="html"><![CDATA[<p>今天看到我们H5的最底层的继承用了inherit.js的东西</p>
-<pre><code><span class="keyword">js</span>有一种异变性很是继承的关键
-
-<span class="keyword">js</span>的继承有原型继承和仿类式继承
-
-最简单的literal对象的继承用jquery的extend属性就可以ok<span class="comment">;</span>
-
-如果是纯<span class="keyword">js</span>的原型链上的继承只要复制一份就好了。
-
-不过其他的继承由于原型链很容易造成易变的效果。比如下方
-</code></pre><p>####<br>    <span style="font-size:12px;"><strong>易变特性</strong></span></p>
-<pre><code>a.最简单的易变
-
-<span class="keyword">var</span> CeshiA = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiA.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;aa&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> CeshiB = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;bb&amp;#39;);</span>
-
-}
-
-CeshiA.prototype= CeshiB.prototype;
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;cc&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> Cb = <span class="keyword">new</span> CeshiA();
-
-Cb.ceshi();
-
-b.生成实例的易变
-
-<span class="keyword">var</span> CeshiA = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiA.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;aa&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> CeshiB = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;bb&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> CeshiC = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-}
-
-CeshiC.prototype = CeshiB.prototype;
-
-CeshiA.prototype = CeshiC;
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;cc&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> Cb = <span class="keyword">new</span> CeshiA();
-
-Cb.ceshi();
-
-c.稍微复杂的易变
-
-<span class="keyword">var</span> CeshiA = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiA.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;aa&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> CeshiB = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;bb&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> CeshiC = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-}
-
-CeshiC.prototype = CeshiB.prototype;
-
-CeshiA.prototype= <span class="keyword">new</span> CeshiC();
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;cc&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> Cb = <span class="keyword">new</span> CeshiA();
-
-Cb.ceshi();
-</code></pre><p>####<br>    <span style="font-size:12px;"><strong>去除易变特性</strong></span></p>
-<pre><code>或者直接继承的是链接上的函数
-
-<span class="keyword">var</span> CeshiA = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiA.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; console.log(&amp;<span class="preprocessor">#39;aa&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> CeshiB = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;
-
-};
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; console.log(&amp;<span class="preprocessor">#39;bb&amp;#39;);</span>
-
-}
-
-CeshiA.prototype.ceshi = CeshiB.prototype.ceshi;
-
-CeshiB.prototype.ceshi = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp; &amp;nbsp;console.log(&amp;<span class="preprocessor">#39;hehe&amp;#39;);</span>
-
-}
-
-<span class="keyword">var</span> Cb = <span class="keyword">new</span> CeshiA();
-
-Cb.ceshi();
-
-易变的根源在于，对象object的易变，又有对象prototype其实是一种object
-
-所以会造成易变，如果用闭包对其建立副本或者用单体模式便可以阻止易变，但是却会破坏继承
-
-比如<span class="keyword">var</span> ceshi = (<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; <span class="function"><span class="keyword">function</span> <span class="title">a</span><span class="params">()</span></span>{
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; }
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; <span class="keyword">return</span> {a:a};
-
-})()
-
-这样函数永远不会被覆盖
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天看到我们H5的最底层的继承用了inherit.js的东西</p>
-<pre><code><span class="keyword">js</span>有一种异变性很是继承的关键
-
-<span class="keyword">js</span>的继承有原型继承和仿类式继承]]>
-    </summary>
-    
-      <category term="js" scheme="http://www.soledad.com.cn/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[grunt探究[不断更新中]]]></title>
-    <link href="http://www.soledad.com.cn/2014/04/24/grunt-e6-8e-a2-e7-a9-b6-e4-b8-8d-e6-96-ad-e6-9b-b4-e6-96-b0-e4-b8-ad/"/>
-    <id>http://www.soledad.com.cn/2014/04/24/grunt-e6-8e-a2-e7-a9-b6-e4-b8-8d-e6-96-ad-e6-9b-b4-e6-96-b0-e4-b8-ad/</id>
-    <published>2014-04-24T07:38:14.000Z</published>
-    <updated>2015-10-17T04:04:41.712Z</updated>
-    <content type="html"><![CDATA[<p>对于grunt真的是无比伤神，话说会者不难，难者不会。</p>
-<pre><code>弄了半天，每次都有所了解。学了大半年，不断了解。将grunt文档都看完才了解。
-
-grunt是自动化工具有很多插件。但是里面有很多坑和难点。
-
-小白如我者。经常如果路径填错了，则完全没有作用。
-
-**&lt;span style=<span class="string">"font-size:14px;"</span>&gt;<span class="number">1.</span>路径匹配规则&lt;/span&gt;**
-
-路径不是想象中的和cmd中的路径一样。有很多不同。
-
-里面的路径我分为两种
-
-<span class="operator">a</span>.任务中的路径
-
-b.读取配置的路径
-
-<span class="operator">a</span>::grunt将Gruntfile.js专门提出来进行自动化。那么我们可以将不同分支的配置文件放入不同的分支中需要的时候进行读取就好了。只要格式一致就可以。
-
-所以读取配置中的路径很容易。最常用的就如例子中一样pkg:grunt.<span class="built_in">file</span>.readJSON(&amp;<span class="comment">#39;package.json&amp;#39;);</span>
-
-以前以为这个是必须的，其实根本没必要添加。只是为了配置分离而已。尼玛。
-
-所以如果想读上面分支的文件就可以grunt.<span class="built_in">file</span>.readJSON(&amp;<span class="comment">#39;../branchA/gruntConf.json&amp;#39;);</span>
-
-b::任务中路径则不同。任务中的路径是用了blob规则详见<span class="keyword">https</span>://github.com/isaacs/node-glob
-
-而文件的任务有以下几种规则
-
-&amp;nbsp;&amp;nbsp; 一、简易式+数组式
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; src：&amp;<span class="comment">#39;a.js&amp;#39;</span>
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; dest:&amp;<span class="comment">#39;dest/&amp;#39;</span>
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; 或
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; src:[<span class="string">'a.js'</span>]
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp; dest:[<span class="string">'dest/'</span>]
-
-&amp;nbsp; 二、动态式
-
-&amp;nbsp;&amp;nbsp; expand：<span class="constant">true</span>
-
-&amp;nbsp;&amp;nbsp; 当expand为<span class="constant">true</span>时可以
-
-&amp;nbsp;&amp;nbsp; `cwd`&amp;nbsp; `src`&amp;nbsp; `dest` 。。。几种常用的其他的自行查文档。
-
-&amp;nbsp;三、文件数组式
-
-&amp;nbsp; <span class="operator">a</span>.<span class="built_in">files</span>:[
-
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;<span class="comment">#39;dest&amp;#39;:['srca.js','srcb.js']</span>
-
-&amp;nbsp;&amp;nbsp; ]
-
-&amp;nbsp; b.<span class="built_in">files</span>:[一，二中的静态或动态对象]
-
-而任务中的路径则是通过基于base和网站根目录很像的base默认是Gruntfile.js所在目录。
-
-所以如果将Gruntfile放在跟目录的一个文件夹里，则不能够对src设置为&amp;<span class="comment">#39;../&amp;#39;</span>
-
-以上所有的路径可以参考blob通配符<span class="keyword">http</span>://gruntjs.cn/configuring-tasks/<span class="comment">#building-the-files-object-dynamically</span>
-
-所以要重新设置Gruntfile中的路径则需要grunt.<span class="built_in">file</span>.setBase(&amp;<span class="comment">#39;../&amp;#39;)</span>
-
-真的是相当伤神。<span class="built_in">file</span>.setBase是设置任务中的base，当然也可以通过-cli中的-b来修改。当base的路径修改的时候就连同<span class="built_in">file</span>和执行目录的base都改了，如果Gruntfile需要和分支分离，那么还真是不方便呢，有点小坑
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p>对于grunt真的是无比伤神，话说会者不难，难者不会。</p>
-<pre><code>弄了半天，每次都有所了解。学了大半年，不断了解。将grunt文档都看完才了解。
-
-grunt是自动化工具有很多插件。但是里面有很多坑和难点。
-
-小白如我者。经常如果路径填错了，则完全没有作]]>
-    </summary>
-    
-      <category term="js" scheme="http://www.soledad.com.cn/categories/js/"/>
     
   </entry>
   
