@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2016-04-14T11:33:52.203Z</updated>
+  <updated>2016-04-14T11:50:00.582Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="http://www.soledad.com.cn/2016/04/13/atom%E9%85%8D%E7%BD%AEeslint%E5%8F%8A%E5%AF%B9%E6%AF%94/"/>
     <id>http://www.soledad.com.cn/2016/04/13/atom配置eslint及对比/</id>
     <published>2016-04-13T08:23:17.000Z</published>
-    <updated>2016-04-14T11:33:52.203Z</updated>
+    <updated>2016-04-14T11:50:00.582Z</updated>
     <content type="html"><![CDATA[<blockquote>
-<p>eslint 是js代码检查工具，有很多很方便设置的规则，能够极大支持react，babel，对代码质量有深远的影响<br>如果对eslint项目配置不理解可以移步到这里</p>
+<p>eslint 是js代码检查工具，有很多很方便设置的规则，能够极大支持react，babel，对代码质量有深远的影响<br>如果对eslint项目配置不理解可以移步到这里<a href="http://soledad.com.cn/2016/04/13/eslint%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_blank" rel="external">eslint在项目中的使用</a></p>
 </blockquote>
 <h3 id="sublime">sublime</h3><p>sublime里面设置eslint是非常方便<br>只需要安装SublimeLinter装好后可在此看到<br><img src="https://os.alipayobjects.com/rmsportal/oYZVLujSyMtmrsn.png" alt="SublimeLinter"><br>然后安装一下 <a href="https://github.com/roadhump/SublimeLinter-eslint" target="_blank" rel="external">SublimeLinter-eslint</a><br>就可以愉快的玩耍了，效果如下，会自动监测项目根目录中的.eslintrc。<br>具体提示在下方，会有简单的报错和报错原因，对于基本的检查比不可少。<br><img src="https://os.alipayobjects.com/rmsportal/VBQzTtXYTYrQawS.png" alt=""></p>
 <p>要安装2个，需要输入对应脚步对应版本号，支持sublime3.0<br>可以在配置中设置高亮的样式效果等。</p>
@@ -41,13 +41,11 @@
 <p>来显示安装了哪些组件。</p>
 <p>好了，来看看效果<br><img src="https://os.alipayobjects.com/rmsportal/eZtOVXGQQmZSeqD.png" alt=""><br>不仅可以看到错误，同时光标移动过去还有小弹窗，底部还有行数，点击后直接转过去。<br>同时可以看到一个文件或者整个项目里的问题。<br><img src="https://os.alipayobjects.com/rmsportal/BJQegObVkiJFbjC.png" alt=""><br>我的天噜。。。</p>
 <h4 id="完美＊＊＊＊＊五星">完美＊＊＊＊＊五星</h4><p>同时在开发时候，如果不想显示错误，想一次提交的时候再看问题，也完全可以通过command + shift + p调出控制台输入eslint就会有各种命令。<br>选择Toggle即可切换提示错误面板，还有其他一些命令不一一介绍了。<br><img src="https://os.alipayobjects.com/rmsportal/sFAeYkFukNCavUQ.png" alt=""></p>
-<p>如果对eslint不是很了解可以看这里</p>
+<p>如果对eslint不是很了解可以看这里<a href="http://soledad.com.cn/2016/04/13/eslint%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_blank" rel="external">eslint在项目中的使用</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<blockquote>
-<p>eslint 是js代码检查工具，有很多很方便设置的规则，能够极大支持react，babel，对代码质量有深远的影响<br>如果对eslint项目配置不理解可以移步到这里</p>
-</blockquote>
-<h3 id="sublime">sub]]>
+<p>eslint 是js代码检查工具，有很多很方便设置的规则，能够极大支持react，babel，对代码质量有深远的影响<br>如果对eslint项目配置不理解可以移步到这里<a href="http://soledad.com.cn/2016/04/]]>
     </summary>
     
       <category term="webstorm sublime atom eslint tool" scheme="http://www.soledad.com.cn/tags/webstorm-sublime-atom-eslint-tool/"/>
@@ -59,7 +57,7 @@
     <link href="http://www.soledad.com.cn/2016/04/13/eslint%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://www.soledad.com.cn/2016/04/13/eslint在项目中的使用/</id>
     <published>2016-04-13T06:11:15.000Z</published>
-    <updated>2016-04-13T08:19:28.513Z</updated>
+    <updated>2016-04-14T11:48:45.425Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>项目的规范和可维护性非常重要。不好的文档难以维护。影响维护的心情，看看下面的例子，能不能好好的玩耍了。</p>
 <ul>
@@ -97,7 +95,7 @@
 <p>{<br>    “rules”: {<br>      “no-alert”: 0,<br>     }<br> }<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#36825;&#20010;&#24050;&#32463;&#22312;eslint-config-airbnb&#20013;&#24050;&#32463;&#26377;&#35828;&#26126;&#10;&#25152;&#20197;&#22914;&#26524;&#24819;&#22312;&#32487;&#25215;airbnb&#35268;&#21017;&#21518;&#23545;&#23545;&#20854;&#36827;&#34892;&#35206;&#30422;&#21487;&#20197;&#36825;&#26679;&#20570;</span><br></pre></td></tr></table></figure></p>
 <p>{<br>    “extends”: “eslint-config-airbnb”,<br>    “rules”: {<br>      “no-alert”: 0,<br>     }<br> }<br> ```</p>
 <hr>
-<p>最后如果想了解如何使用ide支持eslint，能够一边书写一边查错，可移步到这里。</p>
+<p>最后如果想了解如何使用ide支持eslint，能够一边书写一边查错，可移步到这里<a href="http://soledad.com.cn/2016/04/13/atom%E9%85%8D%E7%BD%AEeslint%E5%8F%8A%E5%AF%B9%E6%AF%94/" target="_blank" rel="external">webstorm,sublime,atom配置eslint及对比</a>。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<blockquote>
