@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2016-04-14T11:50:00.582Z</updated>
+  <updated>2016-04-14T11:54:49.683Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.soledad.com.cn/2016/04/13/atom%E9%85%8D%E7%BD%AEeslint%E5%8F%8A%E5%AF%B9%E6%AF%94/"/>
     <id>http://www.soledad.com.cn/2016/04/13/atom配置eslint及对比/</id>
     <published>2016-04-13T08:23:17.000Z</published>
-    <updated>2016-04-14T11:50:00.582Z</updated>
+    <updated>2016-04-14T11:54:49.683Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>eslint 是js代码检查工具，有很多很方便设置的规则，能够极大支持react，babel，对代码质量有深远的影响<br>如果对eslint项目配置不理解可以移步到这里<a href="http://soledad.com.cn/2016/04/13/eslint%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_blank" rel="external">eslint在项目中的使用</a></p>
 </blockquote>
@@ -36,8 +36,8 @@
 <p><img src="https://os.alipayobjects.com/rmsportal/TeqiNdDZQGALnDW.png" alt=""><br><img src="https://os.alipayobjects.com/rmsportal/pLLPFwnoZKJePfQ.png" alt=""></p>
 <p>但是由于webstorm本身要钱，而且超级吃内存，所以。。。</p>
 <h4 id="综合评价＊＊＊＊4-5">综合评价＊＊＊＊4.5</h4><hr>
-<h3 id="atom">atom</h3><p>atom是近期开发的独起之秀，不但有sublime的优点，完全是github团队开发，拥有强势资源，插件安装也异常方便，强力推荐。<br>但是同事却略有不接受，不知为何还是各区所需吧。<br>安装方式非常简单。<br>下载了atom后自动安装类似npm的包管理工具apm<br>只要在命令行里打出<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install linter;&#10;apm install linter-eslint;</span><br></pre></td></tr></table></figure></p>
-<p>即可，同时可以通过命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm ls</span><br></pre></td></tr></table></figure></p>
+<h3 id="atom">atom</h3><p>atom是近期开发的独起之秀，不但有sublime的优点，完全是github团队开发，拥有强势资源，插件安装也异常方便，强力推荐。<br>但是同事却略有不接受，不知为何还是各区所需吧。<br>安装方式非常简单。<br>下载了atom后自动安装类似npm的包管理工具apm<br>只要在命令行里打出<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apm install linter;</span><br><span class="line">apm install linter-eslint;</span><br></pre></td></tr></table></figure></p>
+<p>即可，同时可以通过命令<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm ls</span><br></pre></td></tr></table></figure></p>
 <p>来显示安装了哪些组件。</p>
 <p>好了，来看看效果<br><img src="https://os.alipayobjects.com/rmsportal/eZtOVXGQQmZSeqD.png" alt=""><br>不仅可以看到错误，同时光标移动过去还有小弹窗，底部还有行数，点击后直接转过去。<br>同时可以看到一个文件或者整个项目里的问题。<br><img src="https://os.alipayobjects.com/rmsportal/BJQegObVkiJFbjC.png" alt=""><br>我的天噜。。。</p>
 <h4 id="完美＊＊＊＊＊五星">完美＊＊＊＊＊五星</h4><p>同时在开发时候，如果不想显示错误，想一次提交的时候再看问题，也完全可以通过command + shift + p调出控制台输入eslint就会有各种命令。<br>选择Toggle即可切换提示错误面板，还有其他一些命令不一一介绍了。<br><img src="https://os.alipayobjects.com/rmsportal/sFAeYkFukNCavUQ.png" alt=""></p>
@@ -57,7 +57,7 @@
     <link href="http://www.soledad.com.cn/2016/04/13/eslint%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://www.soledad.com.cn/2016/04/13/eslint在项目中的使用/</id>
     <published>2016-04-13T06:11:15.000Z</published>
-    <updated>2016-04-14T11:52:37.605Z</updated>
+    <updated>2016-04-14T11:54:09.450Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>项目的规范和可维护性非常重要。不好的文档难以维护。影响维护的心情，看看下面的例子，能不能好好的玩耍了。</p>
 <ul>
@@ -69,34 +69,34 @@
 <hr>
 <h3 id="如果需要commit检查一次，">如果需要commit检查一次，</h3><ul>
 <li><p>只要下载<a href="https://www.npmjs.com/package/precommit" target="_blank" rel="external">precommit</a>库并在package里面配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install precommit</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install precommit</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>并在package.json文件中，配置precommit和相应的scripts即可。</p>
 </li>
-<li>比如要在提交前用jshint进行检查，只要在package.json中写入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;scripts&#34;: &#123;&#10;  &#34;lint&#34;: &#34;jshint&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<li>比如要在提交前用jshint进行检查，只要在package.json中写入<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"lint"</span>: <span class="string">"jshint"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;pre-commit&#34;: [&#10;   &#34;lint&#34;&#10; ],</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"pre-commit"</span>: [</span><br><span class="line">   <span class="string">"lint"</span></span><br><span class="line"> ],</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="eslint">eslint</h3><p> 随着时代的发展，对react支持比较好的eslint出场了，<br> eslint有react和babel的插件可以很好的支持react项目的开发。<br> 而现在市面上非常有名的规范<a href="https://www.npmjs.com/package/eslint-config-airbnb" target="_blank" rel="external">eslint-config-airbnb</a>正是基于此</p>
 <p> 想用这套规范开发react项目非常方便</p>
 <ul>
 <li><p>1.只要</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint eslint-babel eslint-plugin-react eslint-config-react</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint eslint-babel eslint-plugin-react eslint-config-react</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>2.然后在package.json里面配置一下相应规则即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;scripts&#34;: &#123;&#10;&#9;&#34;lint&#34;: &#34;eslint --ext .js,.jsx&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">	<span class="string">"lint"</span>: <span class="string">"eslint --ext .js,.jsx"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>3.在根目录下新建.eslintrc</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> &#123;&#10;  &#34;extends&#34;: &#34;eslint-config-airbnb&#34;,&#10;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line">  <span class="string">"extends"</span>: <span class="string">"eslint-config-airbnb"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>大功告成，<br>当我们执行<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    npm run lint </span><br><span class="line"><span class="string">``</span><span class="string">` </span><br><span class="line">或者 </span><br><span class="line">`</span><span class="string">``</span>javascript</span><br><span class="line">    git comit xxx</span><br></pre></td></tr></table></figure></p>
 <p>看看效果<br>出错信息里会包含哪个文件哪一行什么原因出错。<br><img src="https://os.alipayobjects.com/rmsportal/pwMKnVPgewojvph.png" alt=""><br>详细的规则可以阅读<br><a href="https://github.com/sivan/javascript-style-guide/blob/master/es5/README.md" target="_blank" rel="external">airbnb-config</a></p>
 <hr>
 <h3 id="规则的扩展">规则的扩展</h3><p>具体的规则包含bable-eslint 和 eslint-plugin-react两部分<br>以下是一些规则的说明可以在.eslintrc中进行覆盖,当然这些规则完全可以看eslint-config-airbnb的源码对其进行覆盖</p>
-<p><a href="http://eslint.org/docs/rules/" target="_blank" rel="external">eslint</a><br><a href="https://github.com/yannickcr/eslint-plugin-react" target="_blank" rel="external">eslint-react</a><br>比如我现在不希望整个文件里面出现alert，可以这样在.eslintrc中配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;&#9;&#34;rules&#34;: &#123;&#10;&#9;  &#34;no-alert&#34;: 0,&#10;&#9; &#125;&#10; &#125;</span><br></pre></td></tr></table></figure></p>
-<p> 这个已经在eslint-config-airbnb中已经有说明<br> 所以如果想在继承airbnb规则后对对其进行覆盖可以这样做<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;&#9;&#34;extends&#34;: &#34;eslint-config-airbnb&#34;,&#10;&#9;&#34;rules&#34;: &#123;&#10;&#9;  &#34;no-alert&#34;: 0,&#10;&#9; &#125;&#10; &#125;</span><br></pre></td></tr></table></figure></p>
+<p><a href="http://eslint.org/docs/rules/" target="_blank" rel="external">eslint</a><br><a href="https://github.com/yannickcr/eslint-plugin-react" target="_blank" rel="external">eslint-react</a><br>比如我现在不希望整个文件里面出现alert，可以这样在.eslintrc中配置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="string">"rules"</span>: &#123;</span><br><span class="line">	  <span class="string">"no-alert"</span>: <span class="number">0</span>,</span><br><span class="line">	 &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p> 这个已经在eslint-config-airbnb中已经有说明<br> 所以如果想在继承airbnb规则后对对其进行覆盖可以这样做<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="string">"extends"</span>: <span class="string">"eslint-config-airbnb"</span>,</span><br><span class="line">	<span class="string">"rules"</span>: &#123;</span><br><span class="line">	  <span class="string">"no-alert"</span>: <span class="number">0</span>,</span><br><span class="line">	 &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
 <hr>
 <p>最后如果想了解如何使用ide支持eslint，能够一边书写一边查错，可移步到这里<a href="http://soledad.com.cn/2016/04/13/atom%E9%85%8D%E7%BD%AEeslint%E5%8F%8A%E5%AF%B9%E6%AF%94/" target="_blank" rel="external">webstorm,sublime,atom配置eslint及对比</a>。</p>
 ]]></content>
