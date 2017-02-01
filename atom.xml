@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水御双氛的blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.soledad.com.cn/"/>
-  <updated>2017-01-31T16:33:33.755Z</updated>
+  <updated>2017-02-01T15:01:31.290Z</updated>
   <id>http://www.soledad.com.cn/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[2017-02-01]]></title>
+    <link href="http://www.soledad.com.cn/2017/02/01/2017-02-01/"/>
+    <id>http://www.soledad.com.cn/2017/02/01/2017-02-01/</id>
+    <published>2017-02-01T15:01:04.000Z</published>
+    <updated>2017-02-01T15:01:31.290Z</updated>
+    <content type="html"><![CDATA[<p>今天生活的非常充实，一大早做完大保健，又沿着雪路到了额敏。回来又吃了新鲜的烤鱼。<br>今天看了精进里的学习一章，感觉至今为止的学习大部分都是在白费功夫。</p>
+<p>学习没有效果有很多原因。一直在吸纳规整，却少了应用环节，知识带入到应用比较慢。<br>有了反思和归纳后，比至今从头学到尾是有些效果。然而理论层面上带入到现实中还是有很大一段距离。</p>
+<p>学习的知识体系融汇贯通尚且不易，将学习体系遇到相应的问题情节能够快速的检索出来。<br>不仅需要完整体系，同时需要不断锻炼实践和思考。</p>
+<p>所以以后</p>
+<ul>
+<li>1.尝试对过去知识进行整合，以实际问题为思考核心来将知识体系重新整理出来。</li>
+<li>2.再不断对知识体系进行扩充迁移将之完善。</li>
+<li>3.对知识体系运用进行纠错。对其用法，意义，细节框架重新审视。是否符合自己的未来规划。</li>
+</ul>
+<p>在路上遇到一些臭水沟，还有铁厂沟。<br>污染问题令我汗颜。本来是煤炭为资源的铁厂沟也落得没有效益的空城。<br>同时看到7-11的创始人是如何力排众议一点点的进展。<br>让我深深感到一旦开始就没发回头，一旦开始就需要坚持，重要的是要认清开始的是不是一个可持续发展的利他的事情。</p>
+<p>今天感觉还是略有些疲惫，慢慢感受和总结，将学习的结构一点点完善起来去结合实际运用。<br>以后会越来越好的。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天生活的非常充实，一大早做完大保健，又沿着雪路到了额敏。回来又吃了新鲜的烤鱼。<br>今天看了精进里的学习一章，感觉至今为止的学习大部分都是在白费功夫。</p>
+<p>学习没有效果有很多原因。一直在吸纳规整，却少了应用环节，知识带入到应用比较慢。<br>有了反思和归纳后，]]>
+    </summary>
+    
+      <category term="日记" scheme="http://www.soledad.com.cn/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[2017-01-31]]></title>
@@ -1292,30 +1319,6 @@ res.header(&amp;quot<span class="comment">;Access-Control-Allow-Origin&amp;quot;
 &amp;nbsp<span class="comment">; 双shift 查找文件</span>
 
 &amp;nbsp<span class="comment">; shift+]]>
-    </summary>
-    
-      <category term="未分类" scheme="http://www.soledad.com.cn/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[position的贯穿事件]]></title>
-    <link href="http://www.soledad.com.cn/2014/05/20/position-e7-9a-84-e8-b4-af-e7-a9-bf-e4-ba-8b-e4-bb-b6/"/>
-    <id>http://www.soledad.com.cn/2014/05/20/position-e7-9a-84-e8-b4-af-e7-a9-bf-e4-ba-8b-e4-bb-b6/</id>
-    <published>2014-05-20T16:49:20.000Z</published>
-    <updated>2015-10-17T04:04:41.456Z</updated>
-    <content type="html"><![CDATA[<p>当多个浮动元素叠加在一起的时候那么元素无法点击</p>
-<pre><code>可以用如下<span class="tag">css</span>解决这个问题，可以使点击贯穿
-
-<span class="rule"><span class="attribute">pointer-events</span>:<span class="value">none</span></span>;
-
-当然在手机上用的时候有<span class="tag">touchend</span>事件会和<span class="tag">click</span>产生重叠产生鬼点击，学习后再补充
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p>当多个浮动元素叠加在一起的时候那么元素无法点击</p>
-<pre><code>可以用如下<span class="tag">css</span>解决这个问题，可以使点击贯穿
-
-<span class="rule"><span class="attribute">pointe]]>
     </summary>
     
       <category term="未分类" scheme="http://www.soledad.com.cn/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
