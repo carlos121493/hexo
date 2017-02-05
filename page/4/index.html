@@ -207,6 +207,105 @@
           
           
             
+              <a class="post-title-link" href="/2014/04/24/utf-8-bom-e9-97-ae-e9-a2-98/" itemprop="url">
+                UTF-8 BOM问题
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-04-24T10:35:27+00:00" content="2014-04-24">
+            2014-04-24
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/未分类/" itemprop="url" rel="index">
+                  <span itemprop="name">未分类</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2014/04/24/utf-8-bom-e9-97-ae-e9-a2-98/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2014/04/24/utf-8-bom-e9-97-ae-e9-a2-98/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            BOM造成很多问题，却不知为何。如何该用如果不该用
+前些天出了点小问题关于字符编码的，不过莫名其妙的好了，现在还不知道为何。
+
+我们的页面是gb2312或者gbk的要看区域。但是js统一使用utf8进行编码
+
+utf8有Bom和无Bom之分
+
+其实他们的区别就是没有区别。Bom是&lt;span d
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2014/04/24/utf-8-bom-e9-97-ae-e9-a2-98/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2014/04/23/arguments-e7-9a-84-e5-ba-94-e7-94-a8/" itemprop="url">
                 arguments的应用
               </a>
@@ -1096,101 +1195,6 @@ function Class(){ } var a = new Class();a instanceof Class//true
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2014/03/07/javascript-e4-b8-ad-e5-8f-98-e9-87-8f-e7-9a-84-e5-88-a4-e5-ae-9a/" itemprop="url">
-                javascript 中变量的判定
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-03-07T10:08:29+00:00" content="2014-03-07">
-            2014-03-07
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/js/" itemprop="url" rel="index">
-                  <span itemprop="name">js</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2014/03/07/javascript-e4-b8-ad-e5-8f-98-e9-87-8f-e7-9a-84-e5-88-a4-e5-ae-9a/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2014/03/07/javascript-e4-b8-ad-e5-8f-98-e9-87-8f-e7-9a-84-e5-88-a4-e5-ae-9a/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-在javascript中由于javascript是弱变量，如果编码有问题，或者检测不够严谨经常会出现变量转变导致出错。尤其是当遇到null和undefined情况，如果组件用到过多地方很可能由于没有变量定义的缘故而导致报错，解决的办法就是在之前进行变量的判断
-
-1.判定null和undefine一
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/03/07/javascript-e4-b8-ad-e5-8f-98-e9-87-8f-e7-9a-84-e5-88-a4-e5-ae-9a/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1229,7 +1233,7 @@ function Class(){ } var a = new Class();a instanceof Class//true
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">43</span>
+              <span class="site-state-item-count">44</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
